@@ -1,0 +1,14 @@
+Package: amostragem
+Title: Fórmulas para cálculo amostral
+Version: 0.0.1
+Authors@R: 
+    person(given = "Samuel",
+           family = "Vianna",
+           role = c("aut", "cre"),
+           email = "ra107688@uem.br")
+Description: Pacote com fórmulas utilizadas em Técnicas de amostragem. As informações teóricas foram retiradas das aulas de 2020.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
