@@ -9,7 +9,7 @@ intervalo(mean, p, sd, n)
 \arguments{
 \item{mean}{Média amostral}
 
-\item{p}{Valor da probabilidade calculada (z ou t)}
+\item{p}{Valor da estatística calculada (z ou t)}
 
 \item{sd}{Desvio padrão}
 
@@ -23,8 +23,7 @@ Calcula o intervalo de confiança para a média
 com base nos valores amostrais e nível de significância
 }
 \examples{
-alpha <- 0.05
-prob_z(alpha)
+intervalo(0, prob_z(0.05), 1, 100)
 
 
 }

@@ -6,15 +6,14 @@
 #'     com base nos valores amostrais e nível de significância
 #'
 #' @param mean Média amostral
-#' @param p Valor da probabilidade calculada (z ou t)
+#' @param p Valor da estatística calculada (z ou t)
 #' @param sd Desvio padrão 
 #' @param n Tamanho da amostra
 #'
 #' @return Um valor entre 0 e 1.
 #'
 #' @examples
-#' alpha <- 0.05
-#' prob_z(alpha)
+#' intervalo(0, prob_z(0.05), 1, 100)
 #'
 #'
 #' @export
