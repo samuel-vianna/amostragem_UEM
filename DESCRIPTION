@@ -7,6 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "ra107688@uem.br")
 Description: Pacote com fórmulas utilizadas em Técnicas de amostragem. As informações teóricas foram retiradas das aulas de 2020.
+URL: https://github.com/samuel-vianna/amostragem_UEM
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

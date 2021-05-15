@@ -1,8 +1,10 @@
 ---
-output:
-  github_document:
-    html_preview: false
+output: github_document
 ---
+
+```{r setup, echo = FALSE, warning = FALSE, message = FALSE}
+library(amostragem)
+```
 
 # Amostragem
 
@@ -10,14 +12,14 @@ Pacote com funções utilizadas na matéria de [técnicas de amostragem](http://
 
 # Instalação
 
-```{r, eval = FALSE}
+```{r instalacao, eval = FALSE}
 install.packages("devtools")
 devtools::install_github("samuel-vianna/amostragem_UEM")
 ```
 
 # Exemplos
 
-```{r}
+```{r exemplos}
 amostragem::prob_z(0.05, 0, 1) # Estatística Z de N(0, 1) para alpha = 0.05
 
 amostragem::prob_t(0.05, 10) # Estatística T de t(10) para alpha = 0.05
