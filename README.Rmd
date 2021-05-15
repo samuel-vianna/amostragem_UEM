@@ -3,7 +3,7 @@ output: github_document
 ---
 
 ```{r setup, echo = FALSE, warning = FALSE, message = FALSE}
-library(amostragem_UEM)
+library(amostragem)
 ```
 
 # Amostragem

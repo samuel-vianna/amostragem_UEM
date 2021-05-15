@@ -102,24 +102,23 @@
 <div id="instalação" class="section level1">
 <h1 class="hasAnchor">
 <a href="#instala%C3%A7%C3%A3o" class="anchor"></a>Instalação</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"devtools"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"samuel-vianna/amostragem_UEM"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"samuel-vianna/amostragem_UEM"</span><span class="op">)</span></code></pre></div>
 </div>
 <div id="exemplos" class="section level1">
 <h1 class="hasAnchor">
 <a href="#exemplos" class="anchor"></a>Exemplos</h1>
-<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>amostragem<span class="sc">::</span><span class="fu">prob_z</span>(<span class="fl">0.05</span>, <span class="dv">0</span>, <span class="dv">1</span>) <span class="co"># Estatística Z de N(0, 1) para alpha = 0.05</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 1.959964</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>amostragem<span class="sc">::</span><span class="fu">prob_t</span>(<span class="fl">0.05</span>, <span class="dv">10</span>) <span class="co"># Estatística T de t(10) para alpha = 0.05</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 2.228139</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Intervalo de confiança para média com 95% de confiança de uma amostra N(0,1) de tamanho 1000</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>amostragem<span class="sc">::</span><span class="fu">intervalo</span>(<span class="dv">0</span>, amostragem<span class="sc">::</span><span class="fu">prob_z</span>(<span class="fl">0.05</span>), <span class="dv">1</span>, <span class="dv">1000</span>)</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] -0.0619795  0.0619795</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">amostragem</span><span class="fu">::</span><span class="fu"><a href="reference/prob_z.html">prob_z</a></span><span class="op">(</span><span class="fl">0.05</span>, <span class="fl">0</span>, <span class="fl">1</span><span class="op">)</span> <span class="co"># Estatística Z de N(0, 1) para alpha = 0.05</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 1.959964</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">amostragem</span><span class="fu">::</span><span class="fu"><a href="reference/prob_t.html">prob_t</a></span><span class="op">(</span><span class="fl">0.05</span>, <span class="fl">10</span><span class="op">)</span> <span class="co"># Estatística T de t(10) para alpha = 0.05</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 2.228139</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># Intervalo de confiança para média com 95% de confiança de uma amostra N(0,1) de tamanho 1000</span>
+<span class="fu">amostragem</span><span class="fu">::</span><span class="fu"><a href="reference/intervalo.html">intervalo</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fu">amostragem</span><span class="fu">::</span><span class="fu"><a href="reference/prob_z.html">prob_z</a></span><span class="op">(</span><span class="fl">0.05</span><span class="op">)</span>, <span class="fl">1</span>, <span class="fl">1000</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] -0.0619795  0.0619795</span></span></code></pre></div>
 </div>
 
   </div>
